@@ -1,0 +1,419 @@
+/* ここから下に記載していく */
+#contents {
+  flex: 1;
+  padding: 0 3%;
+}
+
+header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+#logo img {
+  width: 300px;
+}
+
+
+/*ナビゲーションの設定*/
+#menubar ul {
+	margin: 0;padding: 0;
+	margin-bottom: 3rem;			/*下に空けるスペース。３文字分。*/
+	display: flex;					/*flexボックスを使う指定*/
+	justify-content: space-around;	/*並びかたの種類の指定*/
+	border-top: 1px solid #ddd;		/*上の線の幅、線種、色*/
+	border-bottom: 1px solid #ddd;	/*下の線の幅、線種、色*/
+}
+
+/*メニュー１個あたりの設定*/
+#menubar li {
+	flex: 1;
+	text-align: center;
+}
+#menubar a {
+	text-decoration: none;  /*文字の装飾なし*/
+  display: block; /*ブロックボックス*/
+	color: black;
+	padding: 0.7rem 0.5rem;		/*上下、左右へのメニュー内の余白*/
+}
+
+/*ホバー*/
+#menubar a:hover {
+	background: grey;	/*背景色。css冒頭で指定しているテーマカラーを読み込みます*/
+	color: #fff;						/*文字色*/
+}
+
+.mainlogo {
+  position: relative;
+}
+
+.mainlogo img {
+  width: 100%;
+}
+
+#mainlogotext{
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#logotext {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-size: 28px;
+}
+
+#About-Eng-title {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ffd61a;
+  font-weight: bold;
+}
+
+#About-JP-title {
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #222222;
+
+}
+
+.About-maintext {
+  font-size: 16px;
+  color: #222222;
+}
+
+#abouttext1 {
+  padding-bottom: 40px;
+}
+
+#abouttext2 {
+  padding-bottom: 40px;
+}
+
+#abouttext3 {
+  padding-bottom: 40px;
+}
+
+#abouttext4 {
+  padding-bottom: 80px;
+}
+
+.about ul {
+  position: relative;
+  display: flex;
+  padding-bottom: 60px;
+  width: 100%;
+  justify-content: center;
+}
+
+.about img {
+  width: 100%;
+}
+
+#Course-Eng-title {
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #ffd61a;
+  font-weight: bold;
+}
+
+#coursetext1 {
+  font-size: 16px;
+  color: #222222;
+  padding-bottom: 60px;
+}
+
+.box {
+  background-color: #fafafa;
+}
+
+.box h2 {
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box p {
+  font-size: 16px;
+}
+
+.box_image img {
+  display: block;
+  max-width: 100%;
+}
+
+.box_text {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767.98px) {
+  .box_text {
+      padding: 60px 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+      position: relative;
+  }
+  .box_text {
+      padding: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+  .box_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 80%;
+      background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .box_text {
+      background-color: #fafafa;
+  }
+  .box_image {
+      position: relative;
+      top: 0px;
+      left: 50%;
+      transform: translateX(-100%);
+      width: 50%;
+      max-width: 700px;
+  }
+  .box_text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      max-width: 700px;
+  }
+  .box:nth-of-type(even) .box_image {
+      transform: translateX(0%);
+  }
+  .box:nth-of-type(even) .box_text {
+      left: 50%;
+      transform: translateX(-100%) translateY(-50%);
+  }
+}
+
+#NEWS-Eng-title {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ffd61a;
+  font-weight: bold;
+}
+
+#newstext {
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #222222;
+
+}
+
+.NEWS ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.NEWS li {
+  width: 300px;
+}
+
+.NEWS li:hover {
+  background: grey;
+}
+
+.NEWS img {
+  padding-bottom: 30px;
+}
+
+.NEWS #NEWSdata {
+  padding-bottom: 24px;
+  font-size: 16px;
+}
+
+.NEWS #NEWStext {
+  font-size: 14px;
+}
+
+.NEWS .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.NEWS button {
+  width: 300px;
+  height: 60px;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+.NEWS button:hover {
+  background-color: grey;
+}
+
+.Access {
+  background-color: #fafafa;
+}
+
+.Access #Access-Eng-title {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ffd61a;
+  font-weight: bold;
+}
+
+.Access #Accesstext {
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #222222;
+}
+
+.Access img {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.Access #text1 {
+  padding-bottom: 30px;
+}
+
+.Access #text2 {
+  padding-bottom: 30px;
+}
+
+.Access #text3 {
+  padding-bottom: 30px;
+}
+
+.Access #text4 {
+  padding-bottom: 30px;
+}
+
+.Access #text5 {
+  padding-bottom: 30px;
+}
+
+.Access .Access-maintext {
+  font-size: 16px;
+  padding-bottom: 60px;
+  padding-left: 35%;
+}
+
+.Contact{
+
+}
+
+.Contact #Contact-Eng-title {
+  font-size: 24px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #ffd61a;
+  font-weight: bold;
+}
+
+.Contact #Contacttext {
+  font-size: 18px;
+  padding-bottom: 60px;
+  color: #222222;
+}
+
+.Contact .Contact-maintext {
+  padding-bottom: 70px;
+  font-size: 16px;
+}
+
+.Contact .Contact-maintext #text1 {
+  padding-bottom: 30px;
+}
+
+.form .name label{
+  border-top: solid 2px #bfbfbf;
+  border-right: solid 2px #bfbfbf;
+  border-bottom: solid 2px #bfbfbf;
+  width: px;
+  height: 36px;
+}
+
+.Contact .form {
+  display: flex;
+  justify-content: center;
+}
+
+.Contact .form .form_title {
+  background-color: white;
+  width: 240px;
+  min-height: 36px;
+  border-top: solid 1px #bfbfbf;
+  border-bottom: solid 2px #bfbfbf;
+  border-right: solid 1px #bfbfbf;
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 5px;
+}
+
+.Contact .form .form_text {
+  background-color: white;
+  width: 400px;
+  min-height: 36px;
+  border-top: solid 1px #bfbfbf;
+  border-bottom: solid 2px #bfbfbf;
+  border-left: solid 1px #bfbfbf;
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+
+.Contact .container {
+  padding-top: 30px;
+  padding-bottom: 140px;
+}
+
+.Contact button {
+  width: 300px;
+  height: 60px;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+}
+
+.Contact button:hover {
+  background-color: grey;
+}
+
+.copyrights {
+  width: 100%;
+  background-color: #707070;
+}
+
+.copyrights .container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
